@@ -10,6 +10,11 @@ import {
   FaPlay
 } from 'react-icons/fa';
 import './Home.css';
+import everestImg from '../photos/Everest.jpeg';
+import chitwanImg from '../photos/Chitwan.jpeg';  
+import pokharaImg from '../photos/Pokhara.jpeg';
+import kathmanduImg from '../photos/Kathmandu.jpeg';
+import backgroundImg from '../photos/Background.jpg';
 
 const Home = () => {
   const featuredDestinations = [
@@ -17,7 +22,7 @@ const Home = () => {
       id: 1,
       name: 'Everest Base Camp',
       description: 'Experience the ultimate trekking adventure to the base of the world\'s highest peak.',
-      image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: everestImg,
       duration: '14 Days',
       difficulty: 'Challenging',
       rating: 4.9
@@ -26,7 +31,7 @@ const Home = () => {
       id: 2,
       name: 'Pokhara Valley',
       description: 'Discover serene lakes, stunning mountain views, and peaceful boat rides.',
-      image: 'https://images.unsplash.com/photo-1605640840605-14ac1855827b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: pokharaImg,
       duration: '5 Days',
       difficulty: 'Easy',
       rating: 4.8
@@ -35,19 +40,19 @@ const Home = () => {
       id: 3,
       name: 'Kathmandu Valley',
       description: 'Explore ancient temples, vibrant markets, and rich cultural heritage.',
-      image: 'https://images.unsplash.com/photo-1605640840605-14ac1855827b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: kathmanduImg,
       duration: '3 Days',
       difficulty: 'Easy',
       rating: 4.7
     },
     {
-        id:4,
-        name : 'Chitwan',
-        description :'Explore lush jungles, spot rare wildlife, and experience Tharu culture in Chitwan’s vibrant landscapes—home to rhinos, elephants, and serene riverside sunsets.',
-        image:'',
-        duration : '2 days',
+        id: 4,
+        name: 'Chitwan National Park',
+        description: 'Experience thrilling wildlife safaris where majestic Bengal tigers roam freely alongside one-horned rhinos in pristine jungle habitat.',
+        image: chitwanImg,
+        duration: '4 Days',
         difficulty: 'Easy',
-        rating : 4.2
+        rating: 4.8
     }
   ];
 
@@ -73,34 +78,6 @@ const Home = () => {
       description: 'Immerse yourself in local traditions, festivals, and authentic Nepali hospitality.'
     }
   ];
-
-  const testimonials = [
-    {
-      id: 1,
-      name: 'Sarah Johnson',
-      location: 'United States',
-      text: 'tripNext made our Everest Base Camp trek absolutely unforgettable. The guides were knowledgeable and the organization was flawless.',
-      rating: 5,
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
-    },
-    {
-      id: 2,
-      name: 'David Chen',
-      location: 'Australia',
-      text: 'The cultural tour of Kathmandu was incredible. We experienced authentic Nepal beyond what any guidebook could offer.',
-      rating: 5,
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
-    },
-    {
-      id: 3,
-      name: 'Emma Wilson',
-      location: 'United Kingdom',
-      text: 'Pokhara was magical! The sunrise over the Annapurna range was worth every moment of the journey.',
-      rating: 5,
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
-    }
-  ];
-
   return (
     <div className="home page-transition">
       {/* Hero Section */}
@@ -108,7 +85,7 @@ const Home = () => {
         <div className="hero-background">
           <div className="hero-overlay"></div>
           <img 
-            src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
+            src={backgroundImg} 
             alt="Nepal Mountains" 
             className="hero-image"
           />

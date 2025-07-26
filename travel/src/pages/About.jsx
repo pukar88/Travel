@@ -42,44 +42,6 @@ const About = () => {
     }
   ];
 
-  const team = [
-    {
-      id: 1,
-      name: 'Rajesh Shrestha',
-      position: 'Founder & CEO',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      bio: 'With over 15 years in Nepal tourism, Rajesh founded tripNext to share his passion for Nepal\'s natural beauty and rich culture.',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        instagram: '#'
-      }
-    },
-    {
-      id: 2,
-      name: 'Sita Gurung',
-      position: 'Head of Operations',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      bio: 'Sita ensures every trip runs smoothly with her exceptional organizational skills and deep knowledge of Nepal\'s logistics.',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        instagram: '#'
-      }
-    },
-    {
-      id: 3,
-      name: 'Pemba Sherpa',
-      position: 'Lead Trekking Guide',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      bio: 'Born in the Everest region, Pemba has summited Everest 5 times and leads our most challenging trekking expeditions.',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        instagram: '#'
-      }
-    }
-  ];
 
   const values = [
     {
@@ -202,48 +164,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="section team">
-        <div className="container">
-          <div className="section-header text-center">
-            <h2 className="section-title">Meet Our Team</h2>
-            <p className="section-description">
-              The passionate individuals who make your Nepal adventure possible
-            </p>
-          </div>
-          <div className="team-grid">
-            {team.map((member) => (
-              <div key={member.id} className="team-card card">
-                <div className="team-image-container">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="team-image"
-                  />
-                  <div className="team-overlay">
-                    <div className="team-social">
-                      <a href={member.social.linkedin} className="social-link">
-                        <FaLinkedinIn />
-                      </a>
-                      <a href={member.social.twitter} className="social-link">
-                        <FaTwitter />
-                      </a>
-                      <a href={member.social.instagram} className="social-link">
-                        <FaInstagram />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="card-content">
-                  <h3 className="team-name">{member.name}</h3>
-                  <p className="team-position">{member.position}</p>
-                  <p className="team-bio">{member.bio}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Values Section */}
       <section className="section values bg-light">

@@ -14,6 +14,14 @@ import {
   FaArrowRight
 } from 'react-icons/fa';
 import './Destinations.css';
+import everestImg from '../photos/Everest.jpeg';
+import chitwanImg from '../photos/Chitwan.jpeg';
+import mustangImg from '../photos/Mustang.jpeg';
+import bandipurImg from '../photos/Bandipur.jpeg';
+import kathmanduImg from '../photos/Kathmandu.jpeg';
+import pokharaImg from '../photos/Pokhara.jpeg';
+import lumbiniImg from '../photos/Lumbini.jpeg';
+
 
 const Destinations = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -26,7 +34,7 @@ const Destinations = () => {
       category: 'trekking',
       location: 'Khumbu Region',
       description: 'Trek to the base of the world\'s highest peak through stunning Sherpa villages and breathtaking mountain landscapes.',
-      image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: everestImg,
       duration: '14 Days',
       difficulty: 'Challenging',
       rating: 4.9,
@@ -40,7 +48,7 @@ const Destinations = () => {
       category: 'lakes',
       location: 'Gandaki Province',
       description: 'Experience serene lakes, stunning mountain reflections, and peaceful boat rides in Nepal\'s adventure capital.',
-      image: 'https://images.unsplash.com/photo-1605640840605-14ac1855827b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: pokharaImg,
       duration: '5 Days',
       difficulty: 'Easy',
       rating: 4.8,
@@ -54,7 +62,7 @@ const Destinations = () => {
       category: 'cultural',
       location: 'Bagmati Province',
       description: 'Explore ancient temples, vibrant markets, and UNESCO World Heritage sites in Nepal\'s cultural heart.',
-      image: 'https://images.unsplash.com/photo-1605640840605-14ac1855827b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: kathmanduImg,
       duration: '3 Days',
       difficulty: 'Easy',
       rating: 4.7,
@@ -68,7 +76,7 @@ const Destinations = () => {
       category: 'trekking',
       location: 'Annapurna Region',
       description: 'Complete the classic circuit trek through diverse landscapes, from subtropical forests to high alpine terrain.',
-      image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: mustangImg,
       duration: '16 Days',
       difficulty: 'Moderate',
       rating: 4.8,
@@ -81,13 +89,13 @@ const Destinations = () => {
       name: 'Chitwan National Park',
       category: 'wildlife',
       location: 'Chitwan District',
-      description: 'Safari adventures in Nepal\'s first national park, home to rhinos, tigers, and diverse wildlife.',
-      image: 'https://images.unsplash.com/photo-1605640840605-14ac1855827b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      description: 'Experience thrilling wildlife safaris in Nepal\'s premier national park, where majestic Bengal tigers roam freely alongside one-horned rhinos in pristine jungle habitat.',
+      image: chitwanImg,
       duration: '4 Days',
       difficulty: 'Easy',
-      rating: 4.6,
-      price: 'Rs.5,000',
-      highlights: ['Rhino Safari', 'Jungle Walk', 'Canoe Ride', 'Tharu Culture'],
+      rating: 4.8,
+      price: 'Rs.8,500',
+      highlights: ['Bengal Tiger Safari', 'One-horned Rhino Spotting', 'Elephant Bathing', 'Tharu Cultural Show', 'Jungle Walk', 'Canoe Safari'],
       bestTime: 'October-March'
     },
     {
@@ -96,7 +104,7 @@ const Destinations = () => {
       category: 'cultural',
       location: 'Lumbini Province',
       description: 'Visit the birthplace of Lord Buddha and explore sacred gardens, monasteries, and archaeological sites.',
-      image: 'https://images.unsplash.com/photo-1605640840605-14ac1855827b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: lumbiniImg,
       duration: '2 Days',
       difficulty: 'Easy',
       rating: 4.5,
@@ -109,13 +117,13 @@ const Destinations = () => {
       name: 'Upper Mustang',
       category: 'cultural',
       location: 'Mustang District',
-      description: 'Discover the forbidden kingdom with ancient caves, monasteries, and preserved Tibetan culture.',
-      image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      description: 'Explore the mystical forbidden kingdom with its dramatic desert landscapes, ancient cave monasteries, and preserved Tibetan Buddhist culture in the trans-Himalayan region.',
+      image: mustangImg,
       duration: '12 Days',
       difficulty: 'Moderate',
       rating: 4.7,
-      price: 'Rs.3000',
-      highlights: ['Lo Manthang', 'Ancient Caves', 'Tibetan Culture', 'Desert Landscapes'],
+      price: 'Rs.45,000',
+      highlights: ['Lo Manthang Palace', 'Ancient Cave Monasteries', 'Tibetan Buddhist Culture', 'Desert Landscapes', 'Forbidden Kingdom', 'Trans-Himalayan Views'],
       bestTime: 'March-November'
     },
     {
@@ -124,7 +132,7 @@ const Destinations = () => {
       category: 'cultural',
       location: 'Tanahun District',
       description: 'Experience traditional Newari architecture and culture in this beautifully preserved hilltop town.',
-      image: 'https://images.unsplash.com/photo-1605640840605-14ac1855827b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: bandipurImg,
       duration: '2 Days',
       difficulty: 'Easy',
       rating: 4.4,
