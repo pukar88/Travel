@@ -14,6 +14,10 @@ import {
 } from 'react-icons/fa';
 import './About.css';
 
+
+
+
+
 const About = () => {
   const stats = [
     {

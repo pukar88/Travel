@@ -13,6 +13,9 @@ import {
   FaSearch,
   FaArrowRight
 } from 'react-icons/fa';
+
+
+
 import './Destinations.css';
 import everestImg from '../photos/Everest.jpeg';
 import chitwanImg from '../photos/Chitwan.jpeg';
