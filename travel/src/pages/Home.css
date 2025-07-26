@@ -155,6 +155,20 @@
 .destination-card {
   overflow: hidden;
   transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.destination-card .card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.destination-btn {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .destination-image-container {
@@ -200,7 +214,7 @@
 .destination-meta {
   display: flex;
   gap: var(--spacing-4);
-  margin-bottom: var(--spacing-4);
+  margin-bottom: var(--spacing-6);
   font-size: var(--font-size-sm);
 }
 

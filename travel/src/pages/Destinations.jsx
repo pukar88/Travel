@@ -30,7 +30,7 @@ const Destinations = () => {
       duration: '14 Days',
       difficulty: 'Challenging',
       rating: 4.9,
-      price: '$2,499',
+      price: 'Rs.30,000',
       highlights: ['Mount Everest Views', 'Sherpa Culture', 'Namche Bazaar', 'Tengboche Monastery'],
       bestTime: 'March-May, September-November'
     },
@@ -44,7 +44,7 @@ const Destinations = () => {
       duration: '5 Days',
       difficulty: 'Easy',
       rating: 4.8,
-      price: '$599',
+      price: 'Rs7,500',
       highlights: ['Phewa Lake', 'Annapurna Views', 'Paragliding', 'World Peace Pagoda'],
       bestTime: 'October-April'
     },
@@ -58,7 +58,7 @@ const Destinations = () => {
       duration: '3 Days',
       difficulty: 'Easy',
       rating: 4.7,
-      price: '$399',
+      price: 'Rs.10,000',
       highlights: ['Durbar Squares', 'Swayambhunath', 'Boudhanath', 'Pashupatinath'],
       bestTime: 'October-March'
     },
@@ -72,7 +72,7 @@ const Destinations = () => {
       duration: '16 Days',
       difficulty: 'Moderate',
       rating: 4.8,
-      price: '$1,899',
+      price: 'RS 10,999',
       highlights: ['Thorong La Pass', 'Muktinath Temple', 'Manang Valley', 'Diverse Landscapes'],
       bestTime: 'March-May, September-November'
     },
@@ -86,7 +86,7 @@ const Destinations = () => {
       duration: '4 Days',
       difficulty: 'Easy',
       rating: 4.6,
-      price: '$699',
+      price: 'Rs.5,000',
       highlights: ['Rhino Safari', 'Jungle Walk', 'Canoe Ride', 'Tharu Culture'],
       bestTime: 'October-March'
     },
@@ -100,7 +100,7 @@ const Destinations = () => {
       duration: '2 Days',
       difficulty: 'Easy',
       rating: 4.5,
-      price: '$299',
+      price: 'Rs.4,000',
       highlights: ['Maya Devi Temple', 'Sacred Garden', 'Monasteries', 'Ashoka Pillar'],
       bestTime: 'October-March'
     },
@@ -114,7 +114,7 @@ const Destinations = () => {
       duration: '12 Days',
       difficulty: 'Moderate',
       rating: 4.7,
-      price: '$2,199',
+      price: 'Rs.3000',
       highlights: ['Lo Manthang', 'Ancient Caves', 'Tibetan Culture', 'Desert Landscapes'],
       bestTime: 'March-November'
     },
@@ -128,7 +128,7 @@ const Destinations = () => {
       duration: '2 Days',
       difficulty: 'Easy',
       rating: 4.4,
-      price: '$199',
+      price: 'Rs.6,000',
       highlights: ['Newari Architecture', 'Mountain Views', 'Traditional Culture', 'Peaceful Atmosphere'],
       bestTime: 'October-April'
     }

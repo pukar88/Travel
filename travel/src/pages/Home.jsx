@@ -39,6 +39,15 @@ const Home = () => {
       duration: '3 Days',
       difficulty: 'Easy',
       rating: 4.7
+    },
+    {
+        id:4,
+        name : 'Chitwan',
+        description :'Explore lush jungles, spot rare wildlife, and experience Tharu culture in Chitwan’s vibrant landscapes—home to rhinos, elephants, and serene riverside sunsets.',
+        image:'',
+        duration : '2 days',
+        difficulty: 'Easy',
+        rating : 4.2
     }
   ];
 
@@ -119,10 +128,7 @@ const Home = () => {
                 <FaMountain />
                 Explore Destinations
               </Link>
-              <button className="btn btn-outline btn-lg hero-video-btn">
-                <FaPlay />
-                Watch Video
-              </button>
+              
             </div>
             <div className="hero-stats fade-in">
               <div className="stat">
@@ -174,7 +180,7 @@ const Home = () => {
                     <span className="duration">{destination.duration}</span>
                     <span className="difficulty">{destination.difficulty}</span>
                   </div>
-                  <Link to="/destinations" className="btn btn-outline">
+                  <Link to="/destinations" className="btn btn-outline destination-btn">
                     Learn More
                     <FaArrowRight />
                   </Link>
@@ -207,42 +213,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Testimonials */}
-      <section className="section testimonials">
-        <div className="container">
-          <div className="section-header text-center">
-            <h2 className="section-title">What Our Travelers Say</h2>
-            <p className="section-description">
-              Real experiences from real travelers who chose tripNext for their Nepal adventure
-            </p>
-          </div>
-          <div className="testimonials-grid">
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="testimonial-card card">
-                <div className="testimonial-rating">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <FaStar key={i} className="star" />
-                  ))}
-                </div>
-                <p className="testimonial-text">"{testimonial.text}"</p>
-                <div className="testimonial-author">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.name}
-                    className="author-image"
-                  />
-                  <div className="author-info">
-                    <h4 className="author-name">{testimonial.name}</h4>
-                    <p className="author-location">{testimonial.location}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="section cta-section">
         <div className="container">
